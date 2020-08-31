@@ -22,4 +22,4 @@
 
 <p align = "justify"><b>PV Array Configuration:</b> Approx. 1 kW Array (with 5 Parallel Strings, and 1 Series Connected Module/String). Charecteristic Curve is as below:</p>
 
-![1Soltech - 1STH-215-P PV Array Configuration in Sumulink]("./output/PVModule.png")
+![1Soltech - 1STH-215-P PV Array Configuration in Sumulink](./output/PVModule.png)
