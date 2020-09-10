@@ -4,8 +4,9 @@ Ts = 10e-6; % Sample Time (fixed-step, discrete)
 
 %% Reading Solar Direct Radiance Data
 data = readtable('./data/direct_solar_radiation_in_kW_per_m2.csv');
-time = data.TIME;           % Time of the Day
-radiation = data.RADIATION; % Direct Solar Radiation in kW/m^2
+time = data.TIME;              % Time of the Day
+radiation = data.RADIATION;    % Direct Solar Radiation in kW/m^2
+radiation = radiation .* 1000; % Converted Radiation in W/m^2
 
 a = 0;
 step = T / length(time);
@@ -27,3 +28,13 @@ temp = 25; % Constant, but can be built using signal builder
 % Max. Power = 213.15 W
 C_PV = 100e-6; % Capacitance Value across PV Array (annot. as C_PV)
 R_PV = 10e-3;  % Resistance Value across PV Array (annot. as C_PV)
+
+%% RLC Value for DC-DC Converters
+% Buck, Boost, Buck-Boost
+Rs = 0.1;  % Series Resistance
+Rp = 1e-4; % Palallel Resistance
+L  = 5e-3;
+C  = 3330e-6;
+
+% Resistive Load
+LOAD = 7;
