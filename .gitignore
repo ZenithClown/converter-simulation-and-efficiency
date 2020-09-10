@@ -28,3 +28,7 @@ codegen/
 
 # Octave session info
 octave-workspace
+
+# ignore PDF Files
+PDFs/
+*.pdf

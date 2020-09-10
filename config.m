@@ -22,3 +22,8 @@ clear data step a i; % Delete unwanted data
 
 %% Temperature Data
 temp = 25; % Constant, but can be built using signal builder
+
+%% PV Array: 1Soltech - 1STH-215-P
+% Max. Power = 213.15 W
+C_PV = 100e-6; % Capacitance Value across PV Array (annot. as C_PV)
+R_PV = 10e-3;  % Resistance Value across PV Array (annot. as C_PV)
