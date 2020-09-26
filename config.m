@@ -39,5 +39,11 @@ Rp = 1e-4; % Palallel Resistance
 L  = 5e-3;
 C  = 3330e-6;
 
+% CUK Converter
+L1 = 1.73e-3;
+L2 = 57.6e-3;
+C1 = 3.52e-6;
+C2 = 20.05e-9;
+
 % Resistive Load
 LOAD = 7;
