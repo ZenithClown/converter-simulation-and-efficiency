@@ -1,6 +1,3 @@
-clc;
-clear;
-
 %% Model Configuration
 T  = 10.0;  % Simulation Time
 Ts = 10e-6; % Sample Time (fixed-step, discrete)
@@ -33,17 +30,30 @@ C_PV = 100e-6; % Capacitance Value across PV Array (annot. as C_PV)
 R_PV = 10e-3;  % Resistance Value across PV Array (annot. as C_PV)
 
 %% RLC Value for DC-DC Converters
-% Buck, Boost, Buck-Boost
+% Boost, Buck-Boost
 Rs = 0.1;  % Series Resistance
 Rp = 1e-4; % Palallel Resistance
 L  = 5e-3;
 C  = 3330e-6;
+
+% Buck Converter
+Rs_buck = 0.1e-3; % Series Resistance
+Rp_buck = 1e-5;   % Palallel Resistance
+L_buck  = 0.2e-3;
+C_buck  = 3330e-6;
 
 % CUK Converter
 L1 = 1.73e-3;
 L2 = 57.6e-3;
 C1 = 3.52e-6;
 C2 = 20.05e-9;
+
+% SEPIC Converter
+L1_s  = 1.73e-3;
+L2_s  = 57.6e-3;
+C1_s  = 3.52e-6;
+C2_s  = 20.05e-9;
+Cin_s = 3.3e-6;
 
 % Resistive Load
 LOAD = 7;
